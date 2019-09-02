@@ -2,7 +2,7 @@
 "Embed wizard" cog by GrumpiestVulcan
 Commissioned 2018-01-15 by Aeternum Studios
 POC: Aeternum#7967 (#173291729192091649)
-Ported to Redbot V3 by Rob Brown
+Ported to Redbot V3 by Rob Brown (09/01/2019)
 """
 
 __author__ = "Caleb Johnson <me@calebj.io> (calebj#0001), Ported to Redbot V3 by Rob Brown"
