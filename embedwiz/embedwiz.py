@@ -140,7 +140,8 @@ class EmbedWizard(commands.Cog):
         See [p]help embedwiz for more information.
         """
         channel = ctx.channel
-        member = channel.server and channel.server.get_member(ctx.message.author.id)
+        #member = channel.server and channel.server.get_member(ctx.message.author.id)
+        member = ctx.author.id
         override = self._check_override(member)
 
         if channel != ctx.message.channel and not member:
