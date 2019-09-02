@@ -1,2 +1,2 @@
 # robs-cogs
-RED Discord cogs
+Port of calebj's embedwiz cog to redbot V3
