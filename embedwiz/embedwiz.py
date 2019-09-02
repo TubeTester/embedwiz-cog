@@ -169,12 +169,12 @@ class EmbedWizard(commands.Cog):
         Posts an embed according to the spec after deleting the original message.
         See [p]help embedwiz for more information.
         """
-        perms = ctx.message.channel.permissions_for(ctx.message.me)
-        can_delete = perms.manage_messages
+        #perms = ctx.message.channel.permissions_for(ctx.message.me)
+        #can_delete = perms.manage_messages
 
-        if not can_delete:
-            msg = "I can't delete your command message! Posting anyway..."
-            await ctx.send(warning(msg))
+        #if not can_delete:
+        #    msg = "I can't delete your command message! Posting anyway..."
+        #    await ctx.send(warning(msg))
 
         tup = await self._parse_embed(ctx, specification, return_todelete=True)
 
@@ -182,8 +182,8 @@ class EmbedWizard(commands.Cog):
             embed, to_delete = tup
             await ctx.send(embed=embed)
 
-            if not can_delete:
-                return
+        #    if not can_delete:
+        #        return
 
             for msg in [ctx.message, *to_delete]:
                 try:
