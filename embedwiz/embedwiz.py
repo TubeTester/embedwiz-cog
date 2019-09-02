@@ -169,7 +169,7 @@ class EmbedWizard(commands.Cog):
         Posts an embed according to the spec after deleting the original message.
         See [p]help embedwiz for more information.
         """
-        perms = ctx.message.channel.permissions_for(ctx.message.server.me)
+        perms = ctx.message.channel.permissions_for(ctx.message.me)
         can_delete = perms.manage_messages
 
         if not can_delete:
