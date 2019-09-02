@@ -205,7 +205,8 @@ class EmbedWizard(commands.Cog):
             #return
 
         try:
-            msg = await self.bot.get_message(channel, str(message_id))
+            msg = await channel.message.edit(str(message_id))
+            #msg = await self.bot.get_message(channel, str(message_id))
         except discord.errors.NotFound:
             await ctx.send(error('Message not found.'))
             return
