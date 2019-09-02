@@ -187,7 +187,7 @@ class EmbedWizard(commands.Cog):
 
             for msg in [ctx.message, *to_delete]:
                 try:
-                    await msg.del #self.bot.delete_message(msg)
+                    await msg.delete #self.bot.delete_message(msg)
                 except discord.HTTPException:
                     continue
 
