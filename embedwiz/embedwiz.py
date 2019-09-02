@@ -5,7 +5,7 @@ POC: Aeternum#7967 (#173291729192091649)
 Ported to Redbot V3 by Rob Brown (09/01/2019)
 """
 
-__author__ = "Caleb Johnson <me@calebj.io> (calebj#0001), Ported to Redbot V3 by Rob Brown"
+__author__ = "Caleb Johnson <me@calebj.io> (calebj#0001), Ported to Redbot V3 by Rob Brown (09/01/2019)"
 __copyright__ = "Copyright 2018, Holocor LLC"
 __version__ = '1.5.2'
 
