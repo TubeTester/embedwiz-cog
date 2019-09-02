@@ -141,7 +141,7 @@ class EmbedWizard(commands.Cog):
         """
         channel = ctx.channel
         #member = channel.server and channel.server.get_member(ctx.message.author.id)
-        member = ctx.channel.server and ctx.channel.server.get_member(ctx.message.author.id)
+        member = ctx.channel and ctx.channel.server.get_member(ctx.message.author.id)
         
         override = self._check_override(member)
 
