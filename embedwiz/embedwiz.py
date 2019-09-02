@@ -222,7 +222,7 @@ class EmbedWizard(commands.Cog):
             return
 
         old_embed = msg.embeds[0]
-        override = self._check_override(member)
+        override = 0 #self._check_override(member)
 
         if override:
             pass
