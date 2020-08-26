@@ -198,7 +198,8 @@ class EmbedWizard(commands.Cog):
         See [p]help embedwiz for more information.
         """
         channel = ctx.channel
-        member = channel.server and channel.server.get_member(ctx.message.author.id)
+        #member = channel.server and channel.server.get_member(ctx.message.author.id)
+        member = ctx.channel and ctx.message.author.id
 
         if channel != ctx.message.channel and not member:
             await ctx.send(error("Channel is private or you aren't in the server that channel belongs to."))
